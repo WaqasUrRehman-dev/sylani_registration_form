@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
@@ -31,9 +32,9 @@ export default function Navbar() {
           <h1 className="text-2xl sm:text-3xl font-bold ">
             Registration Form - SMIT
           </h1>
-          <p className="text-blue-600 border border-blue-600 rounded-full px-3 py-1 text-sm mt-2 inline-block">
-            Student portal
-          </p>
+          <Link to="/allUsers" className="text-blue-600 border border-blue-600 rounded-full px-3 py-1 text-sm mt-2 inline-block">
+            Admin Dashboard 
+          </Link>
       </div>
       <div>
         <p className="text-gray-500 font-semibold mt-4 text-sm md:text-base">

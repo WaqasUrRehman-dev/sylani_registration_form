@@ -27,7 +27,7 @@ export default function Register() {
       .post("http://localhost:5000/api/register", values)
       .then((res) => {
         alert(res.data.message);
-        navigate("/home");
+        navigate("/allUsers");
       })
       .catch((err) => {
         alert(err.response.data.message);
